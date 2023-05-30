@@ -1,25 +1,24 @@
 * {
     padding: 0;
     height: 100%;
-    
+    overflow: hidden;
     margin: 0;
     box-sizing: border-box;
 }
 
   .container {
     display: flex;
-    min-height: 100%;
-    max-width: 100%;
+    
   }
   
   .ps,
   .xbox {
-    position: relative;
+   position: relative;
     flex: 1;
   }
 
   .xbox img {
-    width:130%;
+    width:170%;
     object-fit:cover;
     transition: all 0.5s;
     
@@ -33,27 +32,30 @@
 
   .ps:hover img {
     filter: brightness(50%);
-    width: 130%;
+    width: 170%;
+    z-index: 10 !important;
+    
   }
   
   .xbox:hover img {
     filter: brightness(50%);
     width: 100%;
+
   }
 
   .botao-xbox{
     height: 3rem;
-    width: 25rem;
+    width: 25%;
     font-weight: bold;
     position: fixed;
     margin: 20% 15%;
     align-items: center;
     background: rgba( 0, 0, 0, 0.2);
-    border-radius: 5px;
-    border: 1px solid green;
+    border-radius: 3px;
+    border: 2px solid green;
     transition: all 1s;
     color: rgb(255, 255, 255);
-    z-index: 1000;
+    z-index: 1;
     cursor: pointer;
     font-size: 18px;
     
@@ -61,22 +63,22 @@
 
   .botao-xbox:hover{
     background: rgba(39, 56, 39, 0.6);
-    transform:rotateY(360deg)
+    
   }
 
   .botao-ps{
     height: 3rem;
-    width: 25rem;
+    width: 25%;
     font-weight: bold;
     position: fixed;
-    margin: 20% 15%;
+    margin: 20% 14%;
     align-items: center;
     background: rgba( 0, 0, 0, 0.2);
-    border-radius: 5px;
-    border: 1px solid rgb(79, 122, 241);
+    border-radius: 3px;
+    border: 2px solid rgb(79, 122, 241);
     transition: all 1s;
     color: rgb(255, 255, 255);;
-    z-index: 1000;
+    z-index: 1;
     cursor: pointer;
     font-size: 18px;
     
@@ -84,5 +86,4 @@
 
   .botao-ps:hover{
     background: rgba(6, 101, 226, 0.6);
-    transform:rotateY(360deg)
   }
