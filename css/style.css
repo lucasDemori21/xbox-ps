@@ -46,7 +46,7 @@ img{
   margin: 6% 0 0 30%;
   align-items: center;
   border-radius: 3px;
-  transition: all 1s;
+  transition: all 0.5s;
   color: rgb(255, 255, 255);
   z-index: 1;
   cursor: pointer;
