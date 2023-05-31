@@ -8,6 +8,7 @@
 
 .container {
   display: flex;
+  min-height: 100%;
 }
 
 .ps,
@@ -53,7 +54,7 @@ img{
 }
 
 .b-x{
-  border: 3px solid green;
+  border: 3px solid rgba(64, 150, 64);
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -63,10 +64,10 @@ img{
 }
 
 .b-x:hover {
-  background: rgba(64, 150, 64, 0.6);
+  background: rgba(64, 150, 64);
 }
 
 .b-p:hover {
-  background: rgba(6, 101, 226, 0.6);
+  background: rgb(79, 122, 241);
 }
 
