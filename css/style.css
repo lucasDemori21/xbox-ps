@@ -1,89 +1,71 @@
 * {
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-  .container {
-    display: flex;
-    
-  }
-  
-  .ps,
-  .xbox {
-   position: relative;
-    flex: 1;
-  }
+.container {
+  display: flex;
+}
 
-  .xbox img {
-    width:170%;
-    object-fit:cover;
-    transition: all 0.5s;
-    
-  }
-  .ps img {
-    width:100%;
-    object-fit:cover;
-    transition: all 0.5s;
-    
-  }
+.ps,
+.xbox {
+  position: relative;
+  flex: 1;
+  transition: all 1s;
+}
 
-  .ps:hover img {
-    filter: brightness(50%);
-    width: 170%;
-    z-index: 10 !important;
-    
-  }
-  
-  .xbox:hover img {
-    filter: brightness(50%);
-    width: 100%;
+.ps:hover, .xbox:hover {
+  position: relative;
+  flex: 3;
+}
 
-  }
+img{
+  filter: brightness(50%);
+}
 
-  .botao-xbox{
-    height: 3rem;
-    width: 25%;
-    font-weight: bold;
-    position: fixed;
-    margin: 20% 15%;
-    align-items: center;
-    background: rgba( 0, 0, 0, 0.2);
-    border-radius: 3px;
-    border: 2px solid green;
-    transition: all 1s;
-    color: rgb(255, 255, 255);
-    z-index: 1;
-    cursor: pointer;
-    font-size: 18px;
-    
-  }
+.xbox,
+.ps img {
+  width: 100%;
+  object-fit: cover;
+}
 
-  .botao-xbox:hover{
-    background: rgba(39, 56, 39, 0.6);
-    
-  }
+.ps:hover img, .xbox:hover img {
+  filter: brightness(100%);
+}
 
-  .botao-ps{
-    height: 3rem;
-    width: 25%;
-    font-weight: bold;
-    position: fixed;
-    margin: 20% 14%;
-    align-items: center;
-    background: rgba( 0, 0, 0, 0.2);
-    border-radius: 3px;
-    border: 2px solid rgb(79, 122, 241);
-    transition: all 1s;
-    color: rgb(255, 255, 255);;
-    z-index: 1;
-    cursor: pointer;
-    font-size: 18px;
-    
-  }
+.botao {
+  height: 3rem;
+  width: 25%;
+  font-weight: bold;
+  position: absolute;
+  margin: 6% 0 0 30%;
+  align-items: center;
+  border-radius: 3px;
+  transition: all 1s;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  cursor: pointer;
+  font-size: 18px;
+}
 
-  .botao-ps:hover{
-    background: rgba(6, 101, 226, 0.6);
-  }
+.b-x{
+  border: 2px solid green;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.b-p{
+  border: 2px solid rgb(79, 122, 241);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.b-x:hover {
+  background: rgba(39, 56, 39, 0.6);
+}
+
+.b-p:hover {
+  background: rgba(6, 101, 226, 0.6);
+}
+
